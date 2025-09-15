@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" id="logo" class="logo"><img src="https://cdn-icons-png.flaticon.com/512/4673/4673720.png" alt="Your Logo"></a>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script>
+        document.getElementById('logo').addEventListener('click', function() {
+            location.reload();
+        });
+    </script>
+    
+
+<div class="container">
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Enter the ingredient..." autocomplete="off">
+        <button id="search-btn" type="button">Search</button>
+    </div>
+    <div id="meal" class="meal-list">
+        <!-- Meal items will be displayed here -->
+    </div>
+</div>
+
+<div class="meal-details">
+    <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="meal-details-content">
+    </div>
+</div>
+
+<div class="preview-dishes">
+    <div class="dish-item">
+        <img src="https://cdn-icons-png.flaticon.com/128/4868/4868143.png" alt="Chicken">
+        <p>Chicken</p>
+    </div>
+    <div class="dish-item">
+        <img src="https://cdn-icons-png.flaticon.com/128/521/521913.png" alt="Egg">
+        <p>Egg</p>
+    </div>
+    <div class="dish-item">
+        <img src="https://cdn-icons-png.flaticon.com/128/4062/4062371.png" alt="pork">
+        <p>pork</p>
+    </div>
+    <div class="dish-item">
+        <img src="https://cdn-icons-png.flaticon.com/128/1549/1549249.png" alt="beef">
+        <p>beef</p>
+    </div>
+    <div class="dish-item">
+        <img src="https://cdn-icons-png.flaticon.com/128/1951/1951372.png" alt="veg">
+        <p>veg</p>
+    </div>
+    <!-- Add more dish items as needed -->
+</div>
+<br><br>
+<div id="about" class="container">
+  <h2>About Us</h2>
+  <div class="about-content">
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod euismod nisi, at scelerisque est faucibus a. Vivamus interdum bibendum dui, at posuere neque fringilla et. Fusce ut placerat leo. Proin at justo purus. Sed eu est libero. Morbi nec odio non ex posuere dapibus at eget mi. Nulla facilisi. Morbi pellentesque euismod magna nec venenatis. Vivamus pharetra est nec risus convallis volutpat. Ut nec diam eget sem vulputate consectetur ac non sapien. Integer at dolor ac lorem tincidunt malesuada.
+      </p>
+  </div>
+</div>
+<br>
+<div id="contact" class="con">
+    <h2>Contact Us</h2>
+    <p>Please feel free to contact us & we would be happy to assist you!<br><br>
+      <form id="contact-form">
+        <div class="form-group">
+            <label for="name" >Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+</div>
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+    <img src="https://cdn-icons-png.flaticon.com/128/400/400365.png" alt="Customer Review Image">
+    <div class="comments">
+        <div class="comment">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="comment">
+            <p>Ut fermentum nisl eget orci vehicula ullamcorper.</p>
+        </div>
+        <div class="comment">
+            <p>Proin mattis ante sit amet ex aliquam, nec tempor nunc pretium.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Recipe Book. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
